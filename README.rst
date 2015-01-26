@@ -34,7 +34,7 @@ Provide any feedback and issues on the `bug tracker`_, that should be coming soo
 
 
 .. _requests: http://docs.python-requests.org/en/latest/
-.. _site: https://bitbucket.org/juztin/py-hancock
-.. _the repository: https://bitbucket.org/juztin/py-hancock
-.. _bug tracker: https://bitbucket.org/juztin/py-hancock
+.. _site: https://github.com/juztin/py-hancock
+.. _the repository: https://github.com/juztin/py-hancock
+.. _bug tracker: https://github.com/juztin/py-hancock/issues
 .. _Python Package Index: http://pypi.python.org/pypi/hancock
