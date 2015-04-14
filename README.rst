@@ -1,4 +1,4 @@
-hancock 1.1.0
+hancock 1.1.1
 =============
 
 HTTP request signing library.

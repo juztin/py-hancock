@@ -15,6 +15,7 @@ import json
 
 TIMEOUT = 5
 VERIFY_SSL = True
+DEBUG = False
 
 _methods = ("GET", "POST", "PUT", "PATCH", "DELETE")
 _b64alt = bytes("-_".encode("utf-8"))
@@ -122,7 +123,10 @@ def request(key, private_key, url, method="GET", query={}, data=None, timeout=TI
         raise Exception("Invalid HTTP method, {}.".format(method))
 
     signed_url = sign(key, private_key, method, url, query=query)
-    return requests.__dict__[method.lower()](signed_url, data=data, timeout=TIMEOUT, verify=VERIFY_SSL)
+    if DEBUG:
+        print("hancock: ", signed_url)
+    func = getattr(requests, method.lower())
+    return func(signed_url, data=data, timeout=TIMEOUT, verify=VERIFY_SSL)
 
 def get(key, private_key, url, query={}, timeout=TIMEOUT, verify_ssl=VERIFY_SSL):
     '''Signs the given url with the given key and invokes GET request.

@@ -3,6 +3,16 @@ Changelog
 
 .. currentmodule:: hancock
 
+Release 1.1.2
+-------------
+
+*Update* - Using `getattr` instead of `__dict__` when invoking `requests` dynamically.
+
+Release 1.1.1
+-------------
+
+*Update* - Added `DEBUG` variable to print out generate URL's on crud methods.
+
 Release 1.1
 -------------
 

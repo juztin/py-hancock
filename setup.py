@@ -10,7 +10,7 @@ def read(fname):
 
 setup(
     name = "hancock",
-    version = "1.1.0",
+    version = "1.1.2",
     author = "Justin Wilson",
     author_email = "justinwilson1@gmail.com",
     description = ("HTTP request signing library."
